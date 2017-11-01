@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b27a2adc8dcf85fe7f38"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "68b889b4df3e7f1d05b0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -23272,6 +23272,7 @@
 	          _props$options2 = _props.options,
 	          minHeight = _props$options2.minHeight,
 	          maxHeight = _props$options2.maxHeight,
+	          contentStyle = _props$options2.contentStyle,
 	          children = _props.children;
 	      var collapse = this.state.collapse;
 	
@@ -23288,11 +23289,11 @@
 	            _react2.default.createElement(
 	              'div',
 	              {
-	                style: {
+	                style: _extends({}, contentStyle, {
 	                  display: 'block',
 	                  overflow: 'hidden',
 	                  height: '' + h + 'px'
-	                } },
+	                }) },
 	              children
 	            ),
 	            _react2.default.createElement(

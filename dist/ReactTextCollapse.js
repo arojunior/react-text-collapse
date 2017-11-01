@@ -81,6 +81,7 @@ var ReactTextCollapse = function (_Component) {
           _props$options2 = _props.options,
           minHeight = _props$options2.minHeight,
           maxHeight = _props$options2.maxHeight,
+          contentStyle = _props$options2.contentStyle,
           children = _props.children;
       var collapse = this.state.collapse;
 
@@ -97,11 +98,11 @@ var ReactTextCollapse = function (_Component) {
             _react2.default.createElement(
               'div',
               {
-                style: {
+                style: _extends({}, contentStyle, {
                   display: 'block',
                   overflow: 'hidden',
                   height: '' + h + 'px'
-                } },
+                }) },
               children
             ),
             _react2.default.createElement(
