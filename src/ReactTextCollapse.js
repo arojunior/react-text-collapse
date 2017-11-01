@@ -40,14 +40,12 @@ export default class ReactTextCollapse extends Component {
         defaultStyle={{ h: 0 }}
         style={{ h: spring(collapse ? minHeight : maxHeight) }}>
         {
-          ({ h }) => (
+          () => (
             <div>
               <div
                 style={{
                   ...contentStyle,
                   display: `block`,
-                  overflow: `hidden`,
-                  height: `${h}` + 'px',
                 }}>
                 {children}
               </div>

@@ -90,8 +90,7 @@ var ReactTextCollapse = function (_Component) {
         {
           defaultStyle: { h: 0 },
           style: { h: (0, _reactMotion.spring)(collapse ? minHeight : maxHeight) } },
-        function (_ref) {
-          var h = _ref.h;
+        function () {
           return _react2.default.createElement(
             'div',
             null,
@@ -99,9 +98,7 @@ var ReactTextCollapse = function (_Component) {
               'div',
               {
                 style: _extends({}, contentStyle, {
-                  display: 'block',
-                  overflow: 'hidden',
-                  height: '' + h + 'px'
+                  display: 'block'
                 }) },
               children
             ),

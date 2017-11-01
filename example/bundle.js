@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "68b889b4df3e7f1d05b0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d8feeaf83bff9c010f2b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -23281,8 +23281,7 @@
 	        {
 	          defaultStyle: { h: 0 },
 	          style: { h: (0, _reactMotion.spring)(collapse ? minHeight : maxHeight) } },
-	        function (_ref) {
-	          var h = _ref.h;
+	        function () {
 	          return _react2.default.createElement(
 	            'div',
 	            null,
@@ -23290,9 +23289,7 @@
 	              'div',
 	              {
 	                style: _extends({}, contentStyle, {
-	                  display: 'block',
-	                  overflow: 'hidden',
-	                  height: '' + h + 'px'
+	                  display: 'block'
 	                }) },
 	              children
 	            ),
