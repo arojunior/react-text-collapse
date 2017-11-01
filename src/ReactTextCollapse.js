@@ -33,7 +33,7 @@ export default class ReactTextCollapse extends Component {
   }
 
   render() {
-    const { options: { minHeight, maxHeight }, children } = this.props;
+    const { options: { minHeight, maxHeight, contentStyle }, children } = this.props;
     const { collapse } = this.state;
     return (
       <Motion
@@ -44,9 +44,10 @@ export default class ReactTextCollapse extends Component {
             <div>
               <div
                 style={{
+                  ...contentStyle,
                   display: `block`,
                   overflow: `hidden`,
-                  height: `${h}` + 'px'
+                  height: `${h}` + 'px',
                 }}>
                 {children}
               </div>
