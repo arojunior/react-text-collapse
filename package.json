@@ -5,7 +5,6 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "standard src/**/*.js | snazzy",
-    "prepublish": "parallelshell -w \"npm run build:dist -s\" \"npm run build:example -s\"",
     "prebuild": "rimraf dist example build",
     "build:dist": "babel src --out-dir dist --source-maps --ignore src/example",
     "build:example": "webpack --config webpack.config.js",
@@ -17,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cht8687/react-text-collapse.git"
+    "url": "git+https://github.com/arojunior/react-text-collapse.git"
   },
   "keywords": [
     "react",
@@ -36,9 +35,9 @@
   "author": "Robert Chang <cht8687@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cht8687/react-text-collapse/issues"
+    "url": "https://github.com/arojunior/react-text-collapse/issues"
   },
-  "homepage": "https://github.com/cht8687/react-text-collapse#readme",
+  "homepage": "https://github.com/arojunior/react-text-collapse#readme",
   "peerDependencies": {
     "react": ">=0.14",
     "react-motion": "^0.4 || ^0.5"

@@ -7,8 +7,6 @@ pids
 *.pid
 *.seed
 
-/dist/
-
 node_modules
 
 # Precommit hook
